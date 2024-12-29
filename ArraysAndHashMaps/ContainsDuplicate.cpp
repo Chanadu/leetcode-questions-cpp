@@ -1,13 +1,13 @@
 //
 // Created by chanadu on 12/19/24.
 //
-#include <vector>
 #include <unordered_set>
+#include <vector>
 
 class Solution {
-public:
-    bool hasDuplicate(std::vector<int>& nums) {
-		std::unordered_set<int> set{};
+   public:
+	bool hasDuplicate(std::vector<int>& nums) {
+		std::unordered_set<int> set;
 
 		for (int num : nums) {
 			if (auto iter = set.find(num); iter != set.end()) {
@@ -15,10 +15,10 @@ public:
 			}
 			set.insert(num);
 		}
-        return false;
-    }
+		return false;
+	}
 
-    bool solution(std::vector<int>& nums) {
+	bool solution(std::vector<int>& nums) {
 		std::unordered_set<int> set{};
 
 		for (int num : nums) {
@@ -27,6 +27,6 @@ public:
 			}
 			set.insert(num);
 		}
-        return false;
-    }
+		return false;
+	}
 };
