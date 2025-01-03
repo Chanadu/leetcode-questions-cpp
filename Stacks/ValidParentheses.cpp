@@ -36,7 +36,7 @@ class Solution {
 		return st.empty();
 	}
 
-	bool withMap(std::string s) {
+	bool withMap(std::string s){
 		std::stack<char> stack;
 		std::unordered_map<char, char> map{{')', '('}, {']', '['}, {'}', '{'}};
 
